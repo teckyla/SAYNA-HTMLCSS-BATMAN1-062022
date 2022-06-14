@@ -20,7 +20,16 @@
 h1 {
     font-family: 'Rajdhani';
     font-size: 36px;
-    font-weight: 400;
+    font-weight: 700;
+    padding: 5% 0%;
+}
+
+
+/* section batman au cinéma habillage espace */
+
+.habillage-espace {
+    text-align: justify;
+    margin-right: 250px;
 }
 
 button {
@@ -75,6 +84,7 @@ nav ul a:hover {
     background-position-x: top center;
     background-repeat: no-repeat;
     background-color: #19587D;
+    background-size: 100;
 }
 
 
@@ -83,4 +93,19 @@ nav ul a:hover {
 .batman-personnage {
     display: flex;
     justify-content: space-between;
+    padding: 5% 0%;
+}
+
+.legende {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.img1 {
+    float: inline-end;
+    width: 8%;
+    height: 1%;
+    margin-left: -2%;
+    margin-top: 2%;
 }
