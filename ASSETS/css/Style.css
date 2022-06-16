@@ -1,111 +1,227 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-@font-face {
-    font-family: 'Rajdhani';
-    src: url(../Polices/Rajdhani-Medium.ttf);
-}
-
-:root {
-    --yellow-color: #FFFF00;
-    --yellow-light: #F8F184;
-    --blue-color: #19587D;
-    --white-color: #FFFF;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-h1 {
-    font-family: 'Rajdhani';
-    font-size: 36px;
-    font-weight: 700;
-    padding: 5% 0%;
-}
-
-
-/* section batman au cinéma habillage espace */
-
-.habillage-espace {
-    text-align: justify;
-    margin-right: 250px;
-}
-
-button {
-    font-family: 'Rajdhani';
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-body {
-    background-color: black;
-    color: white;
-    font-family: 'Space-Grotesk';
-    font-weight: 300;
-}
-
-
-/* Design de la navigation */
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 0;
-}
-
-ul {
-    list-style: none;
-}
-
-nav ul a {
-    color: var(--white-color);
-    font-size: 30px;
-    font-weight: 500;
-    font-family: 'Rajdhani';
-}
-
-nav ul a:hover {
-    color: var(--yellow-color);
-}
-
-
-/*Design de la partie en tête hero */
-
-#hero {
-    background-image: url(../Illustrations/Bathome1.png);
-    height: 800px;
-    background-position-x: top center;
-    background-repeat: no-repeat;
-    background-color: #19587D;
-    background-size: 100;
-}
-
-
-/* Design de la section batman personnages */
-
-.batman-personnage {
-    display: flex;
-    justify-content: space-between;
-    padding: 5% 0%;
-}
-
-.legende {
-    display: block;
-    padding: 10px 0;
-    text-align: center;
-}
-
-.img1 {
-    float: inline-end;
-    width: 8%;
-    height: 1%;
-    margin-left: -2%;
-    margin-top: 2%;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+    @font-face {
+        font-family: 'Rajdhani';
+        src: url(../Polices/Rajdhani-Medium.ttf);
+    }
+    
+     :root {
+        --yellow-color: #FFFF00;
+        --yellow-light: #F8F184;
+        --blue-color: #19587D;
+        --white-color: #FFFF;
+        --red-color: #b11313;
+        --black-color: #0D0E09;
+        --redlight-color: #890008;
+        --gris-color: #0e0c0c54;
+        --gradient-white: #eddebfb4;
+        --gradient-red: #890009b4;
+        --black-color: #0000;
+    }
+    /* Définition des Bordures */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    h1 {
+        font-family: 'Rajdhani';
+        font-size: 36px;
+        font-weight: 400;
+    }
+    
+    button {
+        font-family: 'Rajdhani';
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    .container {
+        width: 80px;
+        margin: 0 auto;
+    }
+    /* definitions des polices */
+    /* section batman au cinéma habillage espace */
+    
+    .habillage-espace {
+        text-align: justify;
+        margin-right: 250px;
+    }
+    
+    button {
+        font-family: 'Rajdhani';
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    body {
+        background-color: black;
+        color: white;
+        font-family: 'Space Grotesk';
+        font-weight: 300;
+        text-size-adjust: 16px;
+        color: var(--white-color);
+    }
+    /* Design de la navigation */
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    nav ul a {
+        color: var(--white-color);
+        font-size: 30px;
+        font-weight: 500;
+        font-family: 'Rajdhani';
+    }
+    
+    nav ul a:hover {
+        color: var(--yellow-color);
+    }
+    /*Design de la partie en tête hero */
+    
+    #hero {
+        background-image: url(../Illustrations/Bathome1.png);
+        height: 800px;
+        background-position-x: top center;
+        background-repeat: no-repeat;
+        background-color: #19587D;
+        background-size: cover;
+        padding-top: 40px;
+    }
+    
+    .content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 150px;
+    }
+    
+    #hero .titre {
+        margin: 20px 0;
+    }
+    
+    .btn {
+        text-decoration: none;
+        color: var(--white-color);
+        font-size: 22px;
+        padding: 10px 40px;
+        height: 30px;
+        margin-top: 10px;
+        background: linear-gradient( 80deg, var(--gradient-white), var(--gradient-red));
+        box-shadow: var(--black-color) 15px 15px 40px;
+    }
+    
+    .cta {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 80px;
+    }
+    
+    #hero .fleche {
+        display: block;
+        margin: 0 auto;
+        margin-top: 285px;
+    }
+    
+    .scroll {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        right: 80px;
+        top: 230px;
+    }
+    
+    .scroll .social {
+        margin-top: 15px;
+    }
+    /* Design de la section nemesis personnages */
+    
+    #batman-cinema {
+        margin-top: 40px;
+    }
+    
+    .batman-personnage {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #batman-cinema .titre {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 30px 0;
+    }
+    
+    #batman-cinema .description {
+        margin-top: 40px;
+        text-align: justify;
+        width: 80%;
+        font-size: 21px;
+    }
+    
+    .legende {
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+    }
+    /* Design de la section nemesis personnages */
+    
+    #nemesis {
+        margin-top: 40px;
+    }
+    /* Design de la section alliés personnages */
+    
+    #Alliés {
+        margin-top: 40px;
+    }
+    /* Design de la section Justice League */
+    
+    #Justice League {
+        margin-top: 40px;
+    }
+    /* Design de la section multimédia */
+    
+    #multimédia .slider-multimedia {
+        display: flex;
+        width: 60%;
+        margin: 40px auto;
+    }
+    
+    #multimedia .slider-image {
+        width: 100%;
+    }
+    
+    #multimedia .slider-content {
+        padding: 15px;
+        background: linear-gradient(80deg, var (--gradient-white));
+        box-shadow: var(--black-color) 15px 15px 40px
+    }
+    
+    #multimedia p {
+        font-size: 15px;
+    }
+    
+    .img1 {
+        float: inline-end;
+        width: 8%;
+        height: 1%;
+        margin-left: -2%;
+        margin-top: 2%;
+    }
