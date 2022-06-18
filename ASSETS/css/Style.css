@@ -68,6 +68,30 @@
         text-size-adjust: 16px;
         color: var(--white-color);
     }
+    
+    .up-bar {
+        border-top: #727272 2px solid;
+        position: relative;
+        top: 132px;
+        width: 85%;
+        left: 102px;
+    }
+    
+    .left-bar {
+        border-left: #727272 2px solid;
+        position: relative;
+        top: 132px;
+        width: 85%;
+        left: 102px;
+    }
+    
+    .right-bar {
+        border-right: #727272 2px solid;
+        position: relative;
+        top: 132px;
+        width: 85%;
+        left: 102px;
+    }
     /* Design de la navigation */
     
     nav {
@@ -86,10 +110,17 @@
         font-size: 30px;
         font-weight: 500;
         font-family: 'Rajdhani';
+        font-weight: bold;
+        /*text-decoration: none; */
     }
     
     nav ul a:hover {
         color: var(--yellow-color);
+    }
+    
+    .logo:hover {
+        -webkit-filter: invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)contrast(104%);
+        filter: invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)contrast(104%);
     }
     /*Design de la partie en tête hero */
     
@@ -126,6 +157,7 @@
         margin-top: 10px;
         background: linear-gradient( 80deg, var(--gradient-white), var(--gradient-red));
         box-shadow: var(--black-color) 15px 15px 40px;
+        opacity: 60%;
     }
     
     .cta {
@@ -147,6 +179,11 @@
         position: fixed;
         right: 80px;
         top: 230px;
+    }
+    
+    .scroll:hover {
+        -webkit-filter: invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)contrast(104%);
+        filter: invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)contrast(104%);
     }
     
     .scroll .social {
@@ -198,6 +235,12 @@
     }
     /* Design de la section multimédia */
     
+    #multimedia .slider-multimedia {
+        display: flex;
+        width: 60%;
+        margin: 40px auto;
+    }
+    
     #multimédia .slider-multimedia {
         display: flex;
         width: 60%;
@@ -210,12 +253,28 @@
     
     #multimedia .slider-content {
         padding: 15px;
-        background: linear-gradient(80deg, var (--gradient-white));
-        box-shadow: var(--black-color) 15px 15px 40px
+        background-color: grey;
+        /*border-radius: 20px; */
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
     
     #multimedia p {
         font-size: 15px;
+    }
+    
+    #multimedia .yellow {
+        color: var(--yellow-color);
+    }
+    
+    #multimedia button {
+        position: relative;
+        top: 155px;
+        background-color: transparent;
+    }
+    
+    #multimedia button.right {
+        right: -800px;
     }
     
     .img1 {
@@ -224,4 +283,135 @@
         height: 1%;
         margin-left: -2%;
         margin-top: 2%;
+    }
+    /*Design de la partie contact - formulaire */
+    
+    #formulaire {
+        background: linear-gradient(80deg, var(--brown-light), var (--brown-dark));
+        padding: 70px 0;
+    }
+    
+    #formulaire .container {
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    #formulaire h2 {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+    
+    #formulaire .titre {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    #formulaire .container input[type="email"],
+    text zone {
+        display: block;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        width: 500px;
+        border-bottom: 2 px dark gray;
+        background-color: transparent;
+        padding-top: 10px 0;
+    }
+    
+    #form .new {
+        margin: 10px 0;
+        margin-bottom: 2px dark gray;
+    }
+    
+    #form .img icon {
+        transform: rotate (90 degrees);
+        width: 20px;
+    }
+    
+     :-ms-input-placeholder {
+        color: #F8F184;
+        font-size: 15px;
+    }
+    
+     :-ms-input-placeholder {
+        color: #F8F184;
+        font-size: 15px;
+    }
+    
+     ::placeholder {
+        color: #F8F184;
+        font-size: 15px;
+    }
+    
+    .btn-group {
+        padding: 10px;
+        display: flexible;
+        justify-content: space-between;
+    }
+    
+    #form input [ type="radio"] {
+        opacity: 0;
+    }
+    
+    .btn group label {
+        cursor: pointer;
+        padding: 10px;
+        border: 2 px solid;
+        -o-border-image: linear-gradient (69 deg, red, blue) 1;
+        border-image: linear-gradient (69 deg, red, blue) 1;
+        font-size: 20px;
+    }
+    
+    input [ type='submit'] {
+        display: block;
+        width: 230px;
+        margin: 25px auto;
+        padding: 15px 0;
+        cursor: pointer;
+        background: linear gradient ( 80 degrees, var ( --gradient-white), var ( --gradient-red));
+        border: none;
+    }
+    
+    #citation {
+        margin: 90px;
+    }
+    
+    #citation .citation-carte {
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    #citation .quote-author {
+        padding-top: 30px;
+        font-size: 14px;
+        font-family: 'rajdhani';
+    }
+    
+    #quote .quote close {
+        float: right;
+    }
+    /* Footer design */
+    
+    footer {
+        margin-top: 160 px;
+    }
+    
+    footer .text-footer {
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    footer .social footer {
+        text-align: center;
+        margin: 50px 0;
+    }
+    
+    footer.social-element {
+        padding: 20px;
+    }
+    
+    footer.social-item img {
+        width: 2%;
     }
